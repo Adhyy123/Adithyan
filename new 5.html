@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.first-container{
+    position: relative;
+    width: 20%;
+    color: white;
+    align-items: center;
+    
+}
+.firstup{
+    background-color: mediumblue;
+    padding: 30px;
+    border-radius: 10px;
+    width: 200px;
+}
+.firstdown{
+    background-color: midnightblue ;
+    position: absolute;
+    width:200px;
+    top: 280px;
+    padding: 30px;
+    z-index: -1;
+    border-radius: 10px; 
+}
+.first{
+    display: flex;
+}
+
+.second-container{
+    display: flex;
+    padding: 10px;
+}
+
+.second-inner{
+    position: relative;
+    align-items: center;
+    padding:10px;
+    color: white;
+    align-items: center;
+}
+.second-up{
+    background-color: chocolate;
+    border-radius: 5px;
+    color: white;
+    width: 150px;
+    height: 100px;
+    padding: 10px;
+    text-align: end;
+}
+.second-down{
+    background-color: midnightblue;
+    border-radius: 5px;
+    top: 70px;
+    width: 150px;
+    position: absolute;
+    padding: 10px;
+    
+}
+.third{
+    display: flex;
+    position: relative;
+    align-items:flex-end;
+    padding: 10px;
+ 
+
+    
+}
+.third-up{
+    background-color: aquamarine;
+    border-radius: 5px;
+    color: white;
+    width: 150px;
+    height: 100px;
+    padding: 10px;
+    padding-top: 30px;  
+    text-align: end;    
+}
+.third-down{
+    background-color: midnightblue;
+    color: white;
+    position: absolute;
+    top: 70px;
+    padding: 10px;
+    width: 150px;
+    border-radius: 5px;
+ 
+
+}
+.fourth{
+    display: flex;
+    position: relative;
+    align-items:flex-end;
+    padding: 10px;
+}
+.fourth-up{
+    background-color: rgb(229, 48, 117);
+    border-radius: 5px;
+    color: white;
+    width: 150px;
+    height: 100px;
+    padding: 10px;
+    padding-top: 30px; 
+}
+.fourth-down{
+    background-color: midnightblue;
+    color: white;
+    position: absolute;
+    top: 70px;
+    padding: 10px;
+    width: 150px;
+    border-radius: 5px;
+}
+.fifth{
+    display: flex;
+    padding: 10px;
+    margin-top: 80px;
+    gap: 20px;
+}
+.fifth-container{
+    position: relative;
+}
+.fifth-up{
+    background-color: rgb(47, 221, 38);
+    border-radius: 5px;
+    color: white;
+    width: 150px;
+    height: 100px;
+    padding: 10px;
+    padding-top: 30px;
+}
+.fifth-down{
+    background-color: midnightblue;
+    color: white;
+    position: absolute;
+    top: 70px;
+    padding: 10px;
+    width: 150px;
+    border-radius: 5px; 
+}
+.sixth-up{
+    height: 100px;
+    width: 150px;
+    background-color: aqua;
+}
+.sixth-down{
+    height: 100px;
+    width: 150px;
+    background-color: blue;
+}
+
+</style>
+<body>
+    <div class="first">
+        <div class="first-container">
+            <div class="firstup">
+                <img src="images/1-intro-photo-final.jpg" alt="person"width="100px" height="100px">
+                <p>Report for</p>
+                 <h1>Jeremy Robson</h1>
+            </div>
+            <div class="firstdown">
+                <p>Daily</p>
+                 <p>Weekly</p>
+                <p> Monthly</p>
+            </div>
+        </div>
+
+        <div class="second">
+            <div class="second-container">
+                <div class="second-inner">
+                    <div class="second-up"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"  fill="currentcolor"  opacity="0.2"  class="bi bi-cassette-fill" viewBox="0 0 16 16" >
+                        <path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h.191l1.862-3.724A.5.5 0 0 1 4 10h8a.5.5 0 0 1 .447.276L14.31 14h.191a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2zM4 7a1 1 0 1 1 0-2 1 1 0 0 1 0 2m8 0a1 1 0 1 1 0-2 1 1 0 0 1 0 2M6 6a1 1 0 0 1 1-1h2a1 1 0 0 1 0 2H7a1 1 0 0 1-1-1"/>
+                        <path d="m13.191 14-1.5-3H4.309l-1.5 3z"/>
+                      </svg></div>
+                    <div class="second-down">
+                        <h6>Work </h6>
+                        <h1>32hrs</h1>
+                        <p>Last week-30hrs</p>
+                    </div>
+                </div>
+                <div class="third">
+                    <div class="third-up"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-airplane-engines-fill" viewBox="0 0 16 16">
+                        <path d="M8 0c-.787 0-1.292.592-1.572 1.151A4.35 4.35 0 0 0 6 3v3.691l-2 1V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.191l-1.17.585A1.5 1.5 0 0 0 0 10.618V12a.5.5 0 0 0 .582.493l1.631-.272.313.937a.5.5 0 0 0 .948 0l.405-1.214 2.21-.369.375 2.253-1.318 1.318A.5.5 0 0 0 5.5 16h5a.5.5 0 0 0 .354-.854l-1.318-1.318.375-2.253 2.21.369.405 1.214a.5.5 0 0 0 .948 0l.313-.937 1.63.272A.5.5 0 0 0 16 12v-1.382a1.5 1.5 0 0 0-.83-1.342L14 8.691V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v.191l-2-1V3c0-.568-.14-1.271-.428-1.849C9.292.591 8.787 0 8 0"/>
+                      </svg></div>
+                    <div class="third-down">
+                        <h6>Play</h6>
+                        <h1>10hrs</h1>
+                        <p>Last week-8hrs</p>
+                    </div>
+                </div>
+                <div class="fourth">
+                    <div class="fourth-up"></div>
+                    <div class="fourth-down">
+                        <div>
+                            <h6>Study</h6>
+                            <h1>4hrs</h1>
+                            <p>last week-7hrs</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="fifth">
+                <div class="fifth-container">
+                    <div class="fifth-up"></div>
+                    <div class="fifth-down">
+                        <div>
+                            <h6>Exercise</h6>
+                            <h1>4hrs</h1>
+                            <p>Last week-5hrs</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                    
+                       
+                    
+                </div>
+                <div class="seventh">
+                    <div class="seventh-up"></div>
+                    <div class="seventh-down">
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
