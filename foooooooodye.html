@@ -11,7 +11,7 @@
 body{
     padding: 0;
     margin: 0;
-    background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url(images/bg-hero.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/bg-hero.jpg);
 }
 
 #name{
@@ -37,16 +37,16 @@ body{
     float: left;
     width: 80%;
     font-size: 20px;
-    font-weight: 100px;
+    font-weight: 80px;
     margin-top:-5px;
     margin-left: 50px;
-    
+    display: flex;
 }
 #button{
     background-color: rgba(254,161,22,255);
     border: 0;
     height: 40px;
-    margin-left: 20px;
+    margin-left: 140px;
     margin-top:-20px;
 }
 li{
@@ -67,20 +67,42 @@ ul {
 }
 .main-review{
     width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+    
+    
+
 
 }
 .first-review{
-    width: 50%;
+    width: 100%;
     color: rgb(255, 255, 255);
     
     float: left;
 }
 .second-review{
-    width: 50%;
+    width: 25%;
     float: left;
+    margin: left 20px;;
+    
 }
 
 
+#images img{
+    position: relative;
+    animation-name: imagerotate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+@keyframes imagerotate {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
 
 </style>
 <body>
@@ -111,13 +133,16 @@ ul {
     </div>
     <div class="main-review">
         <div class="first-review">
-            <h1 id="messi">Enjoy Our</h1>
-            <h1 id="messi">Delicious Meal</h1>
-            <p id="messi-p">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+            <h1 id="text">Enjoy Our</h1>
+            <h1 id="text">Delicious Meal</h1>
+            <p id="text-p">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+            
         </div>
-        <div class="second-review">
-            <p></p>
+        <div id="images">
+            <div><img src="images/hero.png" alt="" srcset="" width="70%" height="70%">
+            </div>
         </div>
     </div>
+   
 </body>
 </html>
